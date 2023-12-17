@@ -4,8 +4,8 @@ from flask import request
 from flask import jsonify
 import numpy as np
 
-model_file = 'capstone_project\model.pkl'
-dv_file = 'capstone_project\dv.bin'
+model_file = 'model.pkl'
+dv_file = 'dv.bin'
 with open (model_file, 'rb') as f_in:
     model = pickle.load(f_in)
 with open (dv_file, 'rb') as f_in:

@@ -1,5 +1,5 @@
 import requests
-url = "http://localhost:1234/predict"
+url = "http://localhost:9696/predict"
 cus1 = {
         "age":56,
         "sex":"male",
