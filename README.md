@@ -40,14 +40,14 @@ The following libraries are required - pandas, numpy, matplotlib, scikit-learn==
 Notebook can be viewed using nbviewer https://nbviewer.org/github/rlonglands/insurance_charge_predictions/blob/main/notebook.ipynb
 
 ### Running prediction locally as web service:
-Use pipenv to create virtual environment and install dependencies - run commands inside credit_card_approvals directory.
+Use pipenv to create virtual environment and install dependencies - run commands inside insurance_charge_predictions directory.
 1. If you don't have pipenv first run ```pip install pipenv```
 2. To install dependencies ```pipenv install```
 3. Run the service ```pipenv run waitress-serve --listen=0.0.0.0:9696 predict:app```
 4. To use the service run the customer files from a new terminal while the service is running ```python customer1.py``` ```python customer2.py``` ```python customer3.py```
 
 ### Run web service in a docker container:
-1. Docker needs to be installed and running.  Then run commands inside credit_card_approvals directory.
+1. Docker needs to be installed and running.  Then run commands inside insurance_charge_predictions directory.
 2. Build container ```docker build -t insurance_charge_predictions .```
 3. Run container ```docker run -it -p 9696:9696 insurance_charge_predictions:latest```
 4. To use the service run the customer files again.
